@@ -1,0 +1,3 @@
+# This directory holds fixture files used by the test suite.
+# For example, a pre-populated state file can be placed here to test
+# the restore path without requiring a live session.

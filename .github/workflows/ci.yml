@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  smoke:
+    name: Smoke tests (zsh ${{ matrix.zsh }})
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        zsh: ["5.8", "5.9"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install zsh ${{ matrix.zsh }}
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y zsh
+
+      - name: Run install test
+        run: zsh test/install.zsh
+
+      - name: Run smoke tests
+        run: zsh test/smoke.zsh

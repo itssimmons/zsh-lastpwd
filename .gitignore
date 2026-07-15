@@ -1,0 +1,10 @@
+# OS / editor artefacts
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local test state
+.lastpwd
+test/tmp/

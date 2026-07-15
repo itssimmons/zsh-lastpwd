@@ -1,0 +1,56 @@
+name: Bug Report
+description: Something is not working as expected
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.  
+        Please fill in as much detail as possible so we can reproduce and fix the issue quickly.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+      placeholder: Describe the problem…
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How do you reliably trigger the bug?
+      placeholder: |
+        1. Open a new terminal
+        2. cd /tmp
+        3. …
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      placeholder: What should have happened instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: >
+        Run `zsh --version` and `echo $OSTYPE` and paste the output.
+      placeholder: |
+        zsh 5.9 (x86_64-pc-linux-gnu)
+        linux-gnu
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Anything else that might help (config snippets, screenshots, etc.)

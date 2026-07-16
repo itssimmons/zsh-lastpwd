@@ -5,6 +5,10 @@
 Security fixes are applied to the latest tagged release and the current default
 branch.
 
+| Version | Supported          |
+| ------- | ------------------ |
+| 1.0.x   | :white_check_mark: |
+
 ## Reporting a Vulnerability
 
 If you believe you have found a security issue, please do not open a public

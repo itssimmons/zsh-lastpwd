@@ -19,7 +19,7 @@ The state file follows the
 ### Zinit
 
 ```zsh
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 ```
 
 ### Oh My Zsh
@@ -55,7 +55,7 @@ Set the variable **before** loading the plugin to customise the location:
 
 ```zsh
 export LASTPWD_FILE="$HOME/.zsh-lastpwd-state"
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 ```
 
 See [docs/configuration.md](docs/configuration.md) for full details.

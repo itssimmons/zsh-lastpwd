@@ -23,7 +23,7 @@ _lastpwd_save
 **After — Zinit**
 
 ```zsh
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 ```
 
 **After — Oh My Zsh**
@@ -42,5 +42,5 @@ the plugin:
 
 ```zsh
 export LASTPWD_FILE="$HOME/.zsh_lastdir"
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 ```

@@ -22,7 +22,7 @@ function or by setting `LASTPWD_FILE` conditionally:
 if [[ -d ~/work ]]; then
   export LASTPWD_FILE="${XDG_STATE_HOME:-$HOME/.local/state}/zsh-lastpwd-work"
 fi
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 ```
 
 ## Disable restore on startup, keep save
@@ -32,7 +32,7 @@ non-existent file before sourcing — or simply `unset LASTPWD_FILE` after
 loading to stop future saves:
 
 ```zsh
-zinit light itssimmons/zsh-lastpwd
+zi light itssimmons/zsh-lastpwd
 # Don't restore on the *next* new session:
 unset LASTPWD_FILE
 ```
